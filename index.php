@@ -12,6 +12,11 @@ class Movie
         $this->duration = $duration;
         $this->category = $category;
     }
+
+    public function print()
+    {
+        return "$this->title, $this->duration, $this->category";
+    }
 }
 
 ?>
