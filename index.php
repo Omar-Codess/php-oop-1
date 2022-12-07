@@ -5,6 +5,13 @@ class Movie
     public $title;
     public $duration;
     public $category;
+
+    function __construct(String $title, Int $duration, String $category)
+    {
+        $this->title = $title;
+        $this->duration = $duration;
+        $this->category = $category;
+    }
 }
 
 ?>
