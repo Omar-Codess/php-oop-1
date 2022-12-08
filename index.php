@@ -19,12 +19,12 @@ class Movie
     }
 }
 
+$movies = [
+    new Movie("Inception", 120, "thriller"),
+    new Movie("Interstellar", 160, "Sci-Fi")
+];
+
 ?>
-
-
-
-
-
 
 
 <!DOCTYPE html>
@@ -38,7 +38,10 @@ class Movie
 </head>
 
 <body>
-
+    <h1>Movies</h1>
+    <?php foreach ($movies as $title) { ?>
+    <?php echo $title->print();
+    } ?>
 </body>
 
 </html>
