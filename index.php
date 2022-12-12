@@ -15,7 +15,7 @@ class Movie
 
     public function print()
     {
-        return "$this->title, $this->duration, $this->category";
+        return "Title: $this->title, Duration: $this->duration, Category: $this->category";
     }
 }
 
